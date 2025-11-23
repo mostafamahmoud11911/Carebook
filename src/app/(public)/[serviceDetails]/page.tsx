@@ -202,14 +202,14 @@ export default function ServiceDetails() {
                                 <button
                                     onClick={() => scrollBy(-240)}
                                     aria-label="Scroll left"
-                                    className="px-2 py-1 rounded-md border hover:bg-red-50"
+                                    className="px-2 py-1 rounded-md border hover:bg-red-50 cursor-pointer"
                                 >
                                     ‹
                                 </button>
                                 <button
                                     onClick={() => scrollBy(240)}
                                     aria-label="Scroll right"
-                                    className="px-2 py-1 rounded-md border hover:bg-red-50"
+                                    className="px-2 py-1 rounded-md border hover:bg-red-50 cursor-pointer"
                                 >
                                     ›
                                 </button>
@@ -264,7 +264,7 @@ export default function ServiceDetails() {
                     </div>
 
                     <div className='w-full px-11'>
-                        <button onClick={handleBook} className='bg-red-500 text-white p-3 rounded-3xl w-full'>Reserve</button>
+                        <button onClick={handleBook} className='bg-red-500 text-white p-3 rounded-3xl cursor-pointer w-full'>Reserve</button>
                     </div>
                 </div>
             </div>
@@ -309,7 +309,7 @@ export default function ServiceDetails() {
                                         <Dot size={14} />
                                         <p className="text-sm">{dayjs(review.createdAt).fromNow()}</p>
                                     </div>
-                                    <p>{review.comment.slice(0, 300)}</p>
+                                    <p className='break-words mt-2'>{review.comment.slice(0, 300)}</p>
                                 </div>
                             </div>
                         ))
@@ -378,7 +378,7 @@ export default function ServiceDetails() {
                                 />
                             </div>
 
-                            <Button type='submit' className='w-fit bg-red-500 hover:bg-red-600'>Submit</Button>
+                            <Button type='submit' className='w-fit bg-red-500 hover:bg-red-600 cursor-pointer'>Submit</Button>
                         </form>
                     </Form>
                 </div>}

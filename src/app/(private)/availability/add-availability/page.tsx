@@ -48,7 +48,7 @@ export default function AddAvailability() {
 
   const { data: servicesData } = useServices(undefined, undefined, undefined, undefined, undefined, 100);
   const { data: providersData } = useUsers();
-  const { mutate } = useAddAvailability();
+  const { mutate, isPending } = useAddAvailability();
 
 
   useEffect(() => {
@@ -217,7 +217,7 @@ export default function AddAvailability() {
               )}
             />
 
-            <Button type="submit" className="w-full bg-red-400 hover:bg-red-500">
+            <Button type="submit" disabled={isPending} className="w-full bg-red-400 hover:bg-red-500 cursor-pointer">
               Save Availability
             </Button>
           </form>

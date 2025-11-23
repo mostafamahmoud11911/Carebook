@@ -90,7 +90,7 @@ export default function Services() {
                     <TableCell>
                       <DropdownMenu>
                         <DropdownMenuTrigger>
-                          <EllipsisVertical />
+                          <EllipsisVertical className="cursor-pointer"/>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent>
                           <DropdownMenuItem asChild>

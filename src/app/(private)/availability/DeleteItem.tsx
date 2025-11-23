@@ -18,7 +18,7 @@ export default function DeleteItem({ availability }: { availability: Availabilit
                         <DialogTitle>Delete Availability</DialogTitle>
                         <DialogDescription>
                             Are you sure you want to delete this availability?
-                            <Button disabled={mutation.isPending} onClick={() => mutation.mutate(availability.id)} className="flex items-center mt-3 justify-end gap-2 rounded-md bg-red-500 hover:bg-red-700 p-2 px-4 text-white">Delete</Button>
+                            <Button disabled={mutation.isPending} onClick={() => mutation.mutate(availability.id)} className="flex items-center mt-3 justify-end gap-2 rounded-md bg-red-500 hover:bg-red-700 p-2 px-4 text-white cursor-pointer">Delete</Button>
                         </DialogDescription>
                     </DialogHeader>
                 </DialogContent>

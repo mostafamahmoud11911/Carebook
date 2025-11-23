@@ -205,7 +205,7 @@ export default function AddService() {
                 )}
               />
             </div>
-            <Button type="submit" className="w-full bg-red-400 hover:bg-red-500" disabled={mutation.isPending}>Submit</Button>
+            <Button type="submit" className="w-full bg-red-400 hover:bg-red-500 cursor-pointer" disabled={mutation.isPending}>Submit</Button>
           </form>
         </Form>
       </div>

@@ -17,7 +17,7 @@ export default function DeleteItem({ book }: { book: Booking }) {
                     <DialogTitle>Cancel Book</DialogTitle>
                     <DialogDescription>
                         Are you sure you want to Cancel this Book?
-                        <Button disabled={mutation.isPending} onClick={() => mutation.mutate(book.id)} className="flex items-center mt-3 justify-end gap-2 rounded-md bg-red-500 hover:bg-red-700 p-2 px-4 text-white">Delete</Button>
+                        <Button disabled={mutation.isPending} onClick={() => mutation.mutate(book.id)} className="flex items-center mt-3 justify-end gap-2 rounded-md bg-red-500 hover:bg-red-700 p-2 px-4 cursor-pointer text-white">Delete</Button>
                     </DialogDescription>
                 </DialogHeader>
             </DialogContent>

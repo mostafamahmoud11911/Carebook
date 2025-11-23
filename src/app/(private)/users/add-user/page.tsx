@@ -72,7 +72,7 @@ export default function AddUser() {
                                 </FormItem>
                             )}
                         />
-                        <Button type="submit" disabled={mutation.isPending} className="w-full bg-red-400 hover:bg-red-500">Submit</Button>
+                        <Button type="submit" disabled={mutation.isPending} className="w-full bg-red-400 hover:bg-red-500 cursor-pointer">Submit</Button>
                     </form>
                 </Form>
             </div>

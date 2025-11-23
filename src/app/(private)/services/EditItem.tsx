@@ -198,7 +198,7 @@ export default function EditItem({ service }: { service: Service }) {
               <DialogClose asChild>
                 <Button variant="outline">Cancel</Button>
               </DialogClose>
-              <Button type="submit" className='bg-red-400 hover:bg-red-500' disabled={mutation.isPending}>Save change</Button>
+              <Button type="submit" className='bg-red-400 hover:bg-red-500 cursor-pointer' disabled={mutation.isPending}>Save change</Button>
             </DialogFooter>
           </form>
         </Form>

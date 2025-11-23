@@ -106,7 +106,7 @@ export default function EditItem({ user }: { user: User }) {
               <DialogClose asChild>
                 <Button variant="outline">Cancel</Button>
               </DialogClose>
-              <Button type="submit" className='bg-red-400 hover:bg-red-500' disabled={mutation.isPending}>Save changes</Button>
+              <Button type="submit" className='bg-red-400 hover:bg-red-500 cursor-pointer' disabled={mutation.isPending}>Save changes</Button>
             </DialogFooter>
           </form>
         </Form>

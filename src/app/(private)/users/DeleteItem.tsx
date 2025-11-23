@@ -25,7 +25,7 @@ export default function DeleteItem({ user }: { user: User }) {
             <DialogTitle>Delete {user.role}</DialogTitle>
             <DialogDescription>
               Are you sure you want to delete this {user.role} {user.username}?
-              <Button disabled={mutation.isPending} onClick={() => mutation.mutate(user.id as number)} className="flex items-center mt-3 justify-end gap-2 rounded-md bg-red-500 hover:bg-red-700 p-2 px-4 text-white">Delete</Button>
+              <Button disabled={mutation.isPending} onClick={() => mutation.mutate(user.id as number)} className="flex items-center mt-3 justify-end gap-2 rounded-md bg-red-500 hover:bg-red-700 p-2 px-4 text-white cursor-pointer">Delete</Button>
             </DialogDescription>
           </DialogHeader>
         </DialogContent>
