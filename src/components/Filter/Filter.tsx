@@ -28,22 +28,23 @@ export default function Filter() {
             onValueChange={(value) => setFilters({ filterName: value })}
           >
             <SelectTrigger className="w-full">
-              <SelectValue placeholder="Filter services by" />
+              <SelectValue placeholder="Choose field" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectLabel>Filter Services</SelectLabel>
+                <SelectLabel>Filter Field</SelectLabel>
                 <SelectItem value="duration">Duration</SelectItem>
                 <SelectItem value="price">Price</SelectItem>
               </SelectGroup>
             </SelectContent>
           </Select>
+
           <Select
             value={op}
             onValueChange={(value) => setFilters({ op: value })}
           >
             <SelectTrigger className="my-4 w-full">
-              <SelectValue placeholder="Filter services by" />
+              <SelectValue placeholder="Choose operator" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
@@ -59,11 +60,12 @@ export default function Filter() {
 
           <Input
             type="text"
-            placeholder="Value..."
+            placeholder="Search services..."
             value={value}
             onChange={(e) => setFilters({ value: e.target.value })}
             className="w-full border rounded px-3 py-2 mb-4"
           />
+
 
           <div className="flex justify-between">
             <Button
