@@ -99,11 +99,19 @@ export default function Services() {
                       </TableCell>
                       <TableCell>{service.price}</TableCell>
                       <TableCell>{service.duration}</TableCell>
-                      <TableCell className='overflow-x-auto'>{service.offers}</TableCell>
+                      <TableCell>
+                        {service.offers.length > 0 ? (
+                          <span className="px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs">
+                            {service.offers.length} Offers
+                          </span>
+                        ) : (
+                          "-"
+                        )}
+                      </TableCell>
                       <TableCell>
                         <DropdownMenu>
                           <DropdownMenuTrigger>
-                            <EllipsisVertical className='cursor-pointer'/>
+                            <EllipsisVertical className='cursor-pointer' />
                           </DropdownMenuTrigger>
                           <DropdownMenuContent>
                             <DropdownMenuItem asChild>
