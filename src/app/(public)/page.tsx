@@ -67,7 +67,11 @@ export default function Home() {
 
                 <div className="flex items-center gap-1">
                   <span className="text-sm">{service.price}</span>
-                  {service.offers && service.offers.slice(0, 3).map((offer, i) => <span key={i} className="text-sm">{offer}</span>)}
+                  {service.offers && (
+                    <span className="text-sm text-green-600 font-semibold">
+                      {service.offers.length} Offers Available
+                    </span>
+                  )}
                   <span className="text-sm">{service.duration}</span>
                 </div>
 

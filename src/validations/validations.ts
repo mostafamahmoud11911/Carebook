@@ -67,5 +67,5 @@ export const editAvailabilitySchema = zod.object({
 
 export const addReviewSchema = zod.object({
   rating: zod.number().min(1).max(5),
-  comment: zod.string().min(300)
+  comment: zod.string().min(30)
 })
