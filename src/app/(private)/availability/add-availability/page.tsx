@@ -111,7 +111,7 @@ export default function AddAvailability() {
   return (
     <div className="flex items-center justify-center">
       <div className="w-full max-w-3xl bg-white rounded-md p-10">
-        <h1 className="text-2xl font-bold mb-4">Add New Service</h1>
+        <h1 className="text-2xl font-bold mb-4">Add New Availability</h1>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             <FormField

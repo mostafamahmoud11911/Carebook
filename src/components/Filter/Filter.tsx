@@ -28,11 +28,11 @@ export default function Filter() {
             onValueChange={(value) => setFilters({ filterName: value })}
           >
             <SelectTrigger className="w-full">
-              <SelectValue placeholder="Select a fruit" />
+              <SelectValue placeholder="Filter services by" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectLabel>Fruits</SelectLabel>
+                <SelectLabel>Filter Services</SelectLabel>
                 <SelectItem value="duration">Duration</SelectItem>
                 <SelectItem value="price">Price</SelectItem>
               </SelectGroup>
@@ -43,7 +43,7 @@ export default function Filter() {
             onValueChange={(value) => setFilters({ op: value })}
           >
             <SelectTrigger className="my-4 w-full">
-              <SelectValue placeholder="Select a fruit" />
+              <SelectValue placeholder="Filter services by" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
