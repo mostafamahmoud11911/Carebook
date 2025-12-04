@@ -1,36 +1,17 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📘 CareBook – Booking Platform
 
-## Getting Started
+A modern, seamless, and user‑centric booking platform designed to connect customers with service providers, supported by a powerful admin system. CareBook focuses on simplicity, speed, and a smooth end‑to‑end booking experience.
 
-First, run the development server:
+🟢 Customer Journey
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+CareBook offers a clean and intuitive experience, starting from discovering services all the way to booking confirmation.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Users can browse services from the home page, search and filter results, view detailed service information (images, pricing, offers, reviews), and book instantly using an interactive availability calendar. They can complete bookings as guests or via email/Google login, receive reminders, manage personal details, and submit reviews after appointments.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🔵 Provider Journey
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Service providers can register and access a dedicated dashboard showing bookings, revenue, and reviews. They can add, edit, or delete services, set dynamic pricing and offers, manage availability with a calendar synced to Google Calendar, and organize all incoming bookings efficiently. Providers can also manage business information and policies for a professional presence.
 
-## Learn More
+🔴 Admin Journey
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Admins get a full-scale control panel to monitor platform activity. The dashboard includes KPIs for users, providers, services, and bookings along with analytics charts and trends. Admins can manage user accounts, approve or decline providers, oversee all service content, and handle booking escalations and monitoring.
