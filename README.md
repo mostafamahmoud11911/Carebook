@@ -1,4 +1,4 @@
-📘 CareBook – Booking Platform
+### 📘 CareBook – Booking Platform
 
 A modern, seamless, and user‑centric booking platform designed to connect customers with service providers, supported by a powerful admin system. CareBook focuses on simplicity, speed, and a smooth end‑to‑end booking experience.
 
